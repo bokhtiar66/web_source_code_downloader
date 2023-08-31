@@ -1,0 +1,13 @@
+import urllib.request as u
+import pyfiglet
+import colorama
+
+banner= pyfiglet.figlet_format("Web Source Code Downloader")
+print(colorama.Fore.GREEN+banner)
+print("***************** Created By 0xbokhtiar *****************\n")
+website_name= input("Enter Your Website : ")
+print(" ")
+source = u.urlopen(website_name)
+source_read = source.read()
+print(source_read)
+print(" ")
